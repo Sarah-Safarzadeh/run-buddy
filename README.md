@@ -13,4 +13,4 @@ A website that offers fitness training services.
 * [Run Buddy Repository](https://github.com/Sarah-Safarzadeh/run-buddy/)
 
 ## Contribution
-Made with ❤️ by [Sarah Safarzadeh]
+Made with ❤️ by Sarah Safarzadeh
