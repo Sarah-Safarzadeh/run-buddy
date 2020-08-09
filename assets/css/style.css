@@ -115,8 +115,12 @@ section {
     width: 100%
     margin-bottom: 15px;
     border-radius: 10px;
-
+    background-color: rgba(225, 225, 225, 0.75);
 }
+.form-input:focus {
+    background-color: rgba(255,255,255, 1);
+    outline: none;
+  }
 .hero-form label {
     margin: 0 5px;
 }
@@ -297,7 +301,12 @@ font-size: 17px;
     margin-bottom: 15px;
     margin-top: 5px;
     border-radius: 10px;
+    background-color: rgba(255,255,255, 0.75);
 }
+.contact-form input, .contact-form textarea:focus {
+    background-color: rgba(255,255,255, 1);
+    outline: none;
+  }
 .contact-form button {
     width: 100%;
     border: none;
