@@ -14,6 +14,13 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-image: url("../images/hero-bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
 }
 header h1 {
     font-weight: bold;
@@ -42,6 +49,12 @@ header nav ul li a {
     font-size: 1.5vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+header nav ul li a:hover {
+    background: #fce138;
+    color: #024e76;
+    border-radius: 15px;
+    text-shadow: none;
+  }
 footer {
     display: flex;
     justify-content: space-between;
@@ -72,7 +85,8 @@ section {
     flex-wrap: wrap;
     background-image: url("../images/hero-bg.jpg");
     background-size: cover;
-    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
     align-items: flex-start;
 }
 .hero-form {
@@ -114,6 +128,9 @@ section {
     border: none;
     border-radius: 10px;
 }
+.hero-form button:hover {
+    background-color: #39a6b2;  
+  }
 .hero-cta {
     width: 35%;
     text-align: right;
@@ -291,6 +308,10 @@ font-size: 17px;
     font-size: 16px;
     border-radius: 10px;
 }
+.contact-form button:hover {
+    color: #fce138;
+    background: #39a6b2;
+  }
 /* REACH OUT ENDS */
 .flex-row {
     display: flex;
@@ -349,10 +370,11 @@ font-size: 17px;
 }
 /* MEDIA QUERIES BEGIN */
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
-@media screen AND (max-width: 900px) {
+@media screen AND (max-width: 980px) {
     header {
         padding-bottom: 0;
         justify-content: center;
+        position: relative;
     }
     header h1 {
         width: 100%;
