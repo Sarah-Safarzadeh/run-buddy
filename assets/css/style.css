@@ -301,26 +301,45 @@ justify-content: space-between;
     display: flex;
     padding: 15px;
     align-items: flex-end;
+    position: relative;
+    overflow: hidden;
 }
 .trainer-img::after {
     content: "";
     height: 100%;
     width: 100%;
     background: rgba(252, 225, 56, 0.3);
+    background: linear-gradient(rgba(252, 225, 56, 0.3), var(--secondary-color));
     position: absolute;
     top: 0;
     left: 0;
+    opacity: 0;
+    transition: ease-in 0.35s;
+}
+.trainer:hover .trainer-img::after {
+    opacity: 1;
 }
 .trainer-img h3 {
-    postion: relative;
-    z-index: 1;
+    position: relative;
+    z-index: 999;
     font-size: 28px;
     margin-bottom: 5px;
+    top: 200px;
+    transition: 0.6s;
+    transform: translate(-200px);
 }
 .trainer-img h4 {
-    postion: relative;
-    z-index: 1;
+    position: relative;
+    z-index: 999;
     font-size: 22px;
+    top: 200px;
+    transition: 0.6s;
+    transform: translate(-200px);
+    transition-delay: 0.1s;
+}
+.trainer:hover .trainer-img h3, .trainer:hover .trainer-img h4 {
+    top: 0px;
+    transform: translate(0px);
 }
 .text-left {
     text-align: left;
