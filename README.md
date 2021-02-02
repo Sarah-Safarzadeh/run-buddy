@@ -1,5 +1,4 @@
 # Run Buddy
-Module 1 & 2 activity in the UT Coding Bootcamp
 
 ## Purpose
 A website that offers fitness training services.
