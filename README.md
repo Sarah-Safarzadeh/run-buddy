@@ -10,7 +10,6 @@ A website that offers fitness training services.
 
 ## Website
 * [Run Buddy](https://sarah-safarzadeh.github.io/run-buddy/)
-* [Run Buddy Repository](https://github.com/Sarah-Safarzadeh/run-buddy/)
 
 ## Contribution
 Made with ❤️ by Sarah Safarzadeh
